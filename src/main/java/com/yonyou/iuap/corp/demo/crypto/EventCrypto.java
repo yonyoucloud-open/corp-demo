@@ -19,12 +19,13 @@ import java.util.Random;
  *
  * 注意：需要更新 JRE 中 JCE 无限制权限策略文件
  *
- * JDK6 的下载地址：http://www.oracle.com/technetwork/java/javase/downloads/jce-6-download-429243.html
- * JDK7 的下载地址：http://www.oracle.com/technetwork/java/javase/downloads/jce-7-download-432124.html
- * JDK8 的下载地址：http://www.oracle.com/technetwork/java/javase/downloads/jce8-download-2133166.html
- *
+ * <ul>
+ *     <li>JDK6 的下载地址：http://www.oracle.com/technetwork/java/javase/downloads/jce-6-download-429243.html</li>
+ *     <li>JDK7 的下载地址：http://www.oracle.com/technetwork/java/javase/downloads/jce-7-download-432124.html</li>
+ *     <li>JDK8 的下载地址：http://www.oracle.com/technetwork/java/javase/downloads/jce8-download-2133166.html</li>
+ * </ul>
  */
-public class IsvEventCrypto {
+public class EventCrypto {
 
     private static Charset CHARSET = Charset.forName("utf-8");
 
@@ -36,7 +37,7 @@ public class IsvEventCrypto {
 
     private String suiteKey;
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(IsvEventCrypto.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(EventCrypto.class);
 
     /**
      * 构造函数
@@ -46,7 +47,7 @@ public class IsvEventCrypto {
      * @param suiteKey       套件的 suiteKey
      * @throws CryptoException 执行失败，请查看该异常的错误码和具体的错误信息
      */
-    public IsvEventCrypto(String token, String encodingAesKey, String suiteKey)
+    public EventCrypto(String token, String encodingAesKey, String suiteKey)
             throws CryptoException {
         if (encodingAesKey.length() != 43) {
             LOGGER.error("无效的 AES key");

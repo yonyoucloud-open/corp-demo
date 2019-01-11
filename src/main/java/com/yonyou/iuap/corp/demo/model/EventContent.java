@@ -2,7 +2,7 @@ package com.yonyou.iuap.corp.demo.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
-import com.yonyou.iuap.corp.demo.constraint.IsvEventType;
+import com.yonyou.iuap.corp.demo.constraint.EventType;
 
 import java.io.Serializable;
 
@@ -16,22 +16,7 @@ public class EventContent implements Serializable {
     /**
      * 事件类型
      **/
-    private IsvEventType type;
-
-    /**
-     * 授权事件相关的套件 suite key
-     */
-    private String suiteKey;
-
-    /**
-     * 授权事件相关的套件票据
-     */
-    private String suiteTicket;
-
-    /**
-     * 授权事件相关的授权的租户 id
-     */
-    private String authTenantId;
+    private EventType type;
 
     /**
      * 事件唯一的业务 uuid
@@ -63,21 +48,11 @@ public class EventContent implements Serializable {
      */
     private String[] userId;
 
-    private Order order;
-
-    public Order getOrder() {
-        return order;
-    }
-
-    public void setOrder(Order order) {
-        this.order = order;
-    }
-
-    public IsvEventType getType() {
+    public EventType getType() {
         return type;
     }
 
-    public void setType(IsvEventType type) {
+    public void setType(EventType type) {
         this.type = type;
     }
 
@@ -127,29 +102,5 @@ public class EventContent implements Serializable {
 
     public void setUserId(String[] userId) {
         this.userId = userId;
-    }
-
-    public String getSuiteKey() {
-        return suiteKey;
-    }
-
-    public void setSuiteKey(String suiteKey) {
-        this.suiteKey = suiteKey;
-    }
-
-    public String getSuiteTicket() {
-        return suiteTicket;
-    }
-
-    public void setSuiteTicket(String suiteTicket) {
-        this.suiteTicket = suiteTicket;
-    }
-
-    public String getAuthTenantId() {
-        return authTenantId;
-    }
-
-    public void setAuthTenantId(String authTenantId) {
-        this.authTenantId = authTenantId;
     }
 }

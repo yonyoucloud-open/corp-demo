@@ -3,7 +3,7 @@ package com.yonyou.iuap.corp.demo.constraint;
 /**
  * 推送事件定义
  */
-public enum IsvEventType {
+public enum EventType {
 
     /**
      * 检查回调地址有效性
