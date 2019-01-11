@@ -19,7 +19,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/app")
 public class AppController {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(AppController.class);

@@ -38,7 +38,7 @@ public class PushController {
 
     private ObjectMapper mapper = new ObjectMapper();
 
-    @PostMapping("/open/eventPush")
+    @PostMapping("/eventPush")
     public String eventCallBackReceiver(@RequestBody EncryptionHolder holder) throws IOException {
 
         // 构建解密验签处理对象
