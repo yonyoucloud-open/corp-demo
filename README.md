@@ -29,7 +29,7 @@ URLEncode( Base64( HmacSHA256( parameterMap ) ) )
 **示例请求:**
 
 ```
-GET http://open-auth.app.yyuap.com/open-auth/selfAppAuth/getAccessToken?appKey=fbb5f5b6-21fb-4156-8b73-3ec3ac389ab7&timestamp=1547192727928&signature=7OzDhux%2FyJQt%2B9K2GK4E8YuX%2Fl30NYcnsbEO8D%2F0jCc%3D
+GET https://open.yonyoucloud.com/open-auth/selfAppAuth/getAccessToken?appKey=fbb5f5b6-21fb-4156-8b73-3ec3ac389ab7&timestamp=1547192727928&signature=7OzDhux%2FyJQt%2B9K2GK4E8YuX%2Fl30NYcnsbEO8D%2F0jCc%3D
 ```
 
 **返回参数:**
