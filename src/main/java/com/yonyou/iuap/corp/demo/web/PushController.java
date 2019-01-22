@@ -79,10 +79,10 @@ public class PushController {
                 LOGGER.info("事件类型: {}, 说明: 租户 {} 下部门修改, 部门变更 id: {}", content.getType(), content.getTenantId(), Arrays.toString(content.getDeptId()));
                 break;
             case DEPT_ENABLE:
-                LOGGER.info("事件类型: {}, 说明: 租户 {} 下部门修改, 部门变更 id: {}", content.getType(), content.getTenantId(), Arrays.toString(content.getDeptId()));
+                LOGGER.info("事件类型: {}, 说明: 租户 {} 下部门启用, 部门变更 id: {}", content.getType(), content.getTenantId(), Arrays.toString(content.getDeptId()));
                 break;
             case DEPT_DISABLE:
-                LOGGER.info("事件类型: {}, 说明: 租户 {} 下部门修改, 部门变更 id: {}", content.getType(), content.getTenantId(), Arrays.toString(content.getDeptId()));
+                LOGGER.info("事件类型: {}, 说明: 租户 {} 下部门停用, 部门变更 id: {}", content.getType(), content.getTenantId(), Arrays.toString(content.getDeptId()));
                 break;
             case DEPT_DELETE:
                 LOGGER.info("事件类型: {}, 说明: 租户 {} 下部门删除, 部门变更 id: {}", content.getType(), content.getTenantId(), Arrays.toString(content.getDeptId()));
