@@ -95,6 +95,9 @@ public class PushController {
                 LOGGER.info("事件类型: {}, 说明: 租户 {} 下用户移除，用户 id: {}", content.getType(), content.getTenantId(), Arrays.toString(content.getUserId()));
                 break;
 
+            case DELETE_DIWORKSESSION:
+                LOGGER.info("事件类型: {}, 说明: 租户 {} 注销，信息: {}", content.getType(), content.getTenantId(), content.getContent());
+                break;
 
             case UNKNOWN:
                 LOGGER.info("未知事件");

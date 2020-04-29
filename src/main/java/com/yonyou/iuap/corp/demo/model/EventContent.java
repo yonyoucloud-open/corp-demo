@@ -48,6 +48,11 @@ public class EventContent implements Serializable {
      */
     private String[] userId;
 
+    /**
+     * 附加消息内容，一般是json字符串，下发相关额外事件参数
+     */
+    private String content;
+
     public EventType getType() {
         return type;
     }
@@ -102,5 +107,13 @@ public class EventContent implements Serializable {
 
     public void setUserId(String[] userId) {
         this.userId = userId;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
     }
 }

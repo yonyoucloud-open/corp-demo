@@ -71,7 +71,10 @@ public enum EventType {
      * 用户删除
      */
     USER_DELETE,
-
+    /**
+     * 用户注销事件
+     */
+    DELETE_DIWORKSESSION,
 
     /** UNKNOWN **/
     UNKNOWN
